@@ -72,7 +72,7 @@ class CollectionClassTest {
         colors.put(2, map2);
         colors.put(3 , map3);
 
-        Assertions.assertTrue(colors.containsValue(map1));
+        Assertions.assertEquals(map1 ,colors.containsValue(map1));
 
         Assertions.assertEquals(map1 , colors.remove(map1));
 
